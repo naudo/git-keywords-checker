@@ -1,31 +1,23 @@
 Git Keywords Checker
 ====================
+About
+-----
 
-This hook let you check for common oversights like `var_dump()`, `die()` or `console.log()` and prevent you from commit them.
+This git hook  will automatically check your code for common oversights like `var_dump()`, `die()` or `console.log()` and stop you from commiting them into source control.
+
 
 Installation
 ------------
 
-To install hook, copy pre-commit file to your project .git/hooks/pre-commit:
+To install this hook, copy the pre-commit file to your project's hooks folder.
 
     $ cp pre-commit .git/hooks/pre-commit;
     $ chmod +x .git/hooks/pre-commit;
 
-Now, when you will make some modifications for code and will try to commit, GIT
-will stop you and tells where problem exist.
-
-About
------
-
-Such functions are likely to be never commited in a public repository or on live site, 
-when you are on rush, you forget about them.
 
 Contact
 -------
-
-*Boris Guéry*
-
-Feel free to drop me a line at: guery.b@gmail.com
+Forked from the version written by *Boris Guéry*
 
 License
 -------
